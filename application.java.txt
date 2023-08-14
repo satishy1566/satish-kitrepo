@@ -38,7 +38,24 @@ public class GFG {
         // Checking objects are equal and
         // printing output- true/false
         System.out.println(dog1.equals(dog2));
+feature102
+// new change added by ajay
+ Pet dog1 = new Pet("Snow", 3, "German Shepherd");
+        Pet cat1 = new Pet("Jack", 2, "Tabby");
+        Pet dog2 = new Pet("Snow", 3, "German Shepherd");
+        Pet cat2 = new Pet("Jack", 2, "Persian");
+        Pet dog3 = new Pet("Ray", 1, "Siberian Husky");
+ 
+        // here, hashCode() generates false and condition
+        // reverts to the else statement as soon as it finds out
+        // the lengths of the name value of the objects are
+        // differenT
+        if (dog1.hashCode() == dog3.hashCode())
+            System.out.println(dog1.equals(dog3));
+        else
+            System.out.println("Not equal");
 
+#UAT
     }
 // edited by satish
 import java.io.*;
